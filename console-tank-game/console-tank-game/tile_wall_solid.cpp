@@ -3,6 +3,7 @@
 tile_wall_solid::tile_wall_solid():tile::tile()
 {
 	tile::type = "Solid Wall";
+	tile::symbol = (char)206;
 
 	tile::passable = false;
 	tile::ap_cost = 0;

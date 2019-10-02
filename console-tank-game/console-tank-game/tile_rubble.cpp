@@ -3,6 +3,7 @@
 tile_rubble::tile_rubble():tile::tile()
 {
 	tile::type = "Pile of Rubble";
+	tile::symbol = (char)178;
 
 	tile::passable = true;
 	tile::ap_cost = 3;

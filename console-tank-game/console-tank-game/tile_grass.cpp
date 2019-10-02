@@ -3,6 +3,7 @@
 tile_grass::tile_grass():tile::tile()
 {
 	tile::type = "Grass";
+	tile::symbol = (char)176;
 
 	tile::passable = true;
 	tile::ap_cost = 2;

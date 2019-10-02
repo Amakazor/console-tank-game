@@ -6,6 +6,7 @@ class tile
 {
 protected:
 	std::string type;
+	char symbol;
 	
 	bool passable;
 	int  ap_cost;

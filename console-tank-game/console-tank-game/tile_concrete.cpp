@@ -1,8 +1,9 @@
-#include "tile_concrete.h"
+﻿#include "tile_concrete.h"
 
 tile_concrete::tile_concrete() :tile::tile()
 {
 	tile::type = "Concrete";
+	tile::symbol = (char)254;
 
 	tile::passable = true;
 	tile::ap_cost = 1;
