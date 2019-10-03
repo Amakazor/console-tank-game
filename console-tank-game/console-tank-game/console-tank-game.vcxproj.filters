@@ -13,10 +13,90 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Pliki nagłówkowe\tile">
+      <UniqueIdentifier>{1f8fba50-a44f-4f1b-98c3-76064adcca7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\tile">
+      <UniqueIdentifier>{3eb6835c-5ebd-4ffd-a245-685de5c961aa}</UniqueIdentifier>
+      <Extensions>tile*.cpp</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="console-tank-game.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="actor.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="tile_grass.cpp">
+      <Filter>Pliki źródłowe\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="tile.cpp">
+      <Filter>Pliki źródłowe\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="tile_concrete.cpp">
+      <Filter>Pliki źródłowe\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="tile_wall_solid.cpp">
+      <Filter>Pliki źródłowe\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="tile_wall_crumbly.cpp">
+      <Filter>Pliki źródłowe\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="tile_rubble.cpp">
+      <Filter>Pliki źródłowe\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="engine.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="stage_controller.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="arek.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="actor.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="incude.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>Pliki nagłówkowe\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="tile_concrete.h">
+      <Filter>Pliki nagłówkowe\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="tile_grass.h">
+      <Filter>Pliki nagłówkowe\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="tile_wall_solid.h">
+      <Filter>Pliki nagłówkowe\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="tile_wall_crumbly.h">
+      <Filter>Pliki nagłówkowe\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="tile_rubble.h">
+      <Filter>Pliki nagłówkowe\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="all_tiles.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="stage_controller.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="arek.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="stage1.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -91,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,7 +152,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="actor.cpp" />
+    <ClCompile Include="arek.cpp" />
     <ClCompile Include="console-tank-game.cpp" />
+    <ClCompile Include="engine.cpp" />
+    <ClCompile Include="stage_controller.cpp" />
+    <ClCompile Include="tile.cpp" />
+    <ClCompile Include="tile_concrete.cpp" />
+    <ClCompile Include="tile_grass.cpp" />
+    <ClCompile Include="tile_rubble.cpp" />
+    <ClCompile Include="tile_wall_crumbly.cpp" />
+    <ClCompile Include="tile_wall_solid.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="actor.h" />
+    <ClInclude Include="all_tiles.h" />
+    <ClInclude Include="arek.h" />
+    <ClInclude Include="engine.h" />
+    <ClInclude Include="stage_controller.h" />
+    <ClInclude Include="incude.h" />
+    <ClInclude Include="tile.h" />
+    <ClInclude Include="tile_concrete.h" />
+    <ClInclude Include="tile_grass.h" />
+    <ClInclude Include="tile_rubble.h" />
+    <ClInclude Include="tile_wall_crumbly.h" />
+    <ClInclude Include="tile_wall_solid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="stage1.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
