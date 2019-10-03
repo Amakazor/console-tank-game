@@ -33,6 +33,8 @@ public:
 
 	int  get_ap_cost();
 
+	char get_symbol();
+
 	std::string destroy();
 };
 

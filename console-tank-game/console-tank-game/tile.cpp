@@ -41,6 +41,11 @@ int tile::get_ap_cost()
 	return this->ap_cost;
 }
 
+char tile::get_symbol()
+{
+	return tile::symbol;
+}
+
 std::string tile::destroy()
 {
 	return tile::after_destruct_type;
