@@ -68,11 +68,11 @@ void engine::menu()
 		break;
 
 	case 2:
-		this->file_loader();
+		this->set_game_state(2);
 		break;
-
 	case 9:
 		this->set_game_state(9999);
+		break;
 	default:
 		break;
 	}
@@ -112,26 +112,39 @@ void engine::file_loader()
 			if (does_it_exist_really)
 			{
 				std::cout << '\n';
-				std::cout << "Input stage filename:" << '\n';
+				std::cout << "Enter stage filename or enter 9 to exit:" << '\n';
 			}
 			else
 			{
 				std::cout << '\n';
 				std::cout << "Wrong filename!" << '\n';
-				std::cout << "Input stage filename:" << '\n';
+				std::cout << "Enter stage filename or enter 9 to exit:" << '\n';
 			}
 			std::cin >> filename;
 
-			does_it_exist_really = this->file_exists(filename);
-			if (does_it_exist_really && filename.find(".txt") == std::string::npos)
+			if (filename == "9")
 			{
 				does_it_exist_really = FALSE;
+				this->set_game_state(1);
+				break;
+			}
+			else
+			{
+				does_it_exist_really = this->file_exists(filename);
+				if (does_it_exist_really && filename.find(".txt") == std::string::npos)
+				{
+					does_it_exist_really = FALSE;
+				}
 			}
 
 		} while (!does_it_exist_really);
 
-		//LOAD STAGE
-		this->game_stage_controller->generate_stage(filename);
+		if (does_it_exist_really)
+		{
+			//LOAD STAGE
+			this->game_stage_controller->generate_stage(filename);
+			this->set_game_state(1);
+		}
 	}
 	else
 	{
@@ -155,6 +168,9 @@ void engine::game_loop()
 		{
 		case 1:
 			menu();
+			break;
+		case 2:
+			this->file_loader();
 			break;
 		case 9999:
 			killswitch = TRUE;
