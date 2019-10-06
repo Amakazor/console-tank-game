@@ -25,9 +25,6 @@
     <ClCompile Include="console-tank-game.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="actor.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="tile_grass.cpp">
       <Filter>Pliki źródłowe\tile</Filter>
     </ClCompile>
@@ -55,11 +52,14 @@
     <ClCompile Include="arek.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="input_controller.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="actor.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="incude.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
@@ -93,9 +93,18 @@
     <ClInclude Include="arek.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="input_controller.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="stage1.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="stage2.txt">
       <Filter>Pliki zasobów</Filter>
     </Text>
   </ItemGroup>

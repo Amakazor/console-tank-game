@@ -152,10 +152,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="actor.cpp" />
     <ClCompile Include="arek.cpp" />
     <ClCompile Include="console-tank-game.cpp" />
     <ClCompile Include="engine.cpp" />
+    <ClCompile Include="input_controller.cpp" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="stage_controller.cpp" />
     <ClCompile Include="tile.cpp" />
     <ClCompile Include="tile_concrete.cpp" />
@@ -165,10 +166,11 @@
     <ClCompile Include="tile_wall_solid.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="actor.h" />
     <ClInclude Include="all_tiles.h" />
     <ClInclude Include="arek.h" />
     <ClInclude Include="engine.h" />
+    <ClInclude Include="input_controller.h" />
+    <ClInclude Include="player.h" />
     <ClInclude Include="stage_controller.h" />
     <ClInclude Include="incude.h" />
     <ClInclude Include="tile.h" />
@@ -180,6 +182,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="stage1.txt" />
+    <Text Include="stage2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
