@@ -3,7 +3,6 @@
 #include "incude.h"
 #include "engine.h"
 
-
 int main()
 {
 	std::unique_ptr<engine> game_engine = std::unique_ptr<engine>(new engine);
