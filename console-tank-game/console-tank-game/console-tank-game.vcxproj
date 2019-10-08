@@ -161,6 +161,7 @@
     <ClCompile Include="player_controller_AI.cpp" />
     <ClCompile Include="player_controller_human.cpp" />
     <ClCompile Include="stage_controller.cpp" />
+    <ClCompile Include="tank.cpp" />
     <ClCompile Include="tile.cpp" />
     <ClCompile Include="tile_concrete.cpp" />
     <ClCompile Include="tile_grass.cpp" />
@@ -179,6 +180,7 @@
     <ClInclude Include="player_controller_human.h" />
     <ClInclude Include="stage_controller.h" />
     <ClInclude Include="incude.h" />
+    <ClInclude Include="tank.h" />
     <ClInclude Include="tile.h" />
     <ClInclude Include="tile_concrete.h" />
     <ClInclude Include="tile_grass.h" />
