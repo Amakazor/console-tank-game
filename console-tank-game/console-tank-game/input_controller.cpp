@@ -15,7 +15,9 @@ void input_controller::capture_input()
 	}
 }
 
-std::shared_ptr<char> input_controller::get_current_input()
+char input_controller::get_current_input()
 {
-	return current_input;
+	char _char = *current_input;
+	*this->current_input = ' ';
+	return _char;
 }

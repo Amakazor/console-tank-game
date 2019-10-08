@@ -65,8 +65,8 @@ void engine::menu()
 	switch (user_input_int)
 	{
 	case 1:
+		this->set_game_state(3);
 		break;
-
 	case 2:
 		this->set_game_state(2);
 		break;
@@ -154,9 +154,7 @@ void engine::file_loader()
 
 void engine::init()
 {
-	this->menu();
-
-	std::cout << this->game_stage_controller->stage_to_string();
+	this->game_loop();
 }
 
 void engine::game_loop()
@@ -171,6 +169,12 @@ void engine::game_loop()
 			break;
 		case 2:
 			this->file_loader();
+			break;
+		case 3:
+			this->game_input_controller->capture_input();
+
+			std::this_thread::sleep_for(std::chrono::milliseconds(200));
+			arek::cls();
 			break;
 		case 9999:
 			killswitch = TRUE;

@@ -1,6 +1,7 @@
 #pragma once
 #include "incude.h"
 #include "stage_controller.h"
+#include "input_controller.h"
 
 class engine
 {
@@ -9,7 +10,9 @@ protected:
 
 	unsigned int gamestate = 1;
 
-	std::unique_ptr<stage_controller> game_stage_controller = std::unique_ptr<stage_controller>(new stage_controller);
+	std::shared_ptr<stage_controller> game_stage_controller = std::shared_ptr<stage_controller>(new stage_controller);
+
+	std::unique_ptr<input_controller> game_input_controller = std::unique_ptr<input_controller>(new input_controller);
 
 	bool file_exists(std::string filename);
 
